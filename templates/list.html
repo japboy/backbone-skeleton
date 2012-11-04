@@ -1,0 +1,7 @@
+<% _.each(tweets, function (tweet) { %>
+<p>
+<img src="<%= tweet.image %>">
+<strong><a href="http://twitter.com/<%= tweet.user %>"><%= tweet.name %></a></strong>
+<%= tweet.text %>
+</p>
+<% }); %>
